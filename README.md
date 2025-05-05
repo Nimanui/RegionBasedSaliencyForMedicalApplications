@@ -44,4 +44,12 @@ For the final step we look at the original premise of the paper and attempt to a
 
 I ran out of time to dig in deeper in this area, but generally the next step would be to try to better adjust the regions to actually align with the lungs and see if that is more statistically significant as the paper indicated. Further more saliency mapping algorithms could be implemented and all of this could be applied against other deep learning models.
 
+# Data
+Data here is anonymized youth chest xrays gathered for the paper "Application of the AI System for Pneumonia Detection SUing Chest X-Ray Images", please visit here for more details: https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5
+
+# Citations
 Sümer, Ö., Waikel, R.L., Hanchard, S.E.L., Duong, D., Krawitz, P., Conati, C., Solomon, B.D. &amp; André, E.. (2023). Region-based Saliency Explanations on the Recognition of Facial Genetic Syndromes. <i>Proceedings of the 8th Machine Learning for Healthcare Conference</i>, in <i>Proceedings of Machine Learning Research</i> 219:712-736 Available from https://proceedings.mlr.press/v219/sumer23a.html.
+
+Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning
+Kermany, Daniel S. et al.
+Cell, Volume 172, Issue 5, 1122 - 1131.e9
