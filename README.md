@@ -1,4 +1,4 @@
-# RegionBasedSaliencyForMedicalApplications
+# Region Based Saliency For Medical Applications
 Repository for exploring applying region based saliency mapping to arbitrary deep learning applications with a medical use
 
 The goal here is to apply saliency mapping to a deep learning model applied to visual medical data. From there we apply region mapping to see if we can improve the use and readability 
