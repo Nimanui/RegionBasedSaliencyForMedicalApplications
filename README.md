@@ -14,8 +14,12 @@ In the paper 15 different saliency mapping functions were utilized. For simplici
 # Gradient
 This appears to be among the most basic options and is available pretty much out-of-the-box from pytorch. I ultimately applied this one first and used it more as a proof of concept for how the saliency mapping works. To add gradient saliency, you create a dataloader and set the "requires_grad" property on the pytorch tensor. You can then feed this into your trained model, during which pytorch will generate a gradient (or weight) tensor for how the model views the image. From there it is a simple matter to extract that tensor and display it with matplotlib.
 
+![image](https://github.com/user-attachments/assets/8a9d9d6d-ee62-42ee-a809-c46ea4e71bb0)
+
 # GradCAM
 This is a more sophisticated application of gradient saliency that uses hooks while the model is running apply relu and interpolation to specific layers while you feed data through the model. This produces a down-sampled saliency map that can then be resized and displayed on top of the original image to show the saliency.
+
+![image](https://github.com/user-attachments/assets/fc397ed4-9298-45fd-b079-197511d1d0f7)
 
 # LRP-ε-Z⁺ Rule
 Like with GradCAM LRP leverages hooks to observe specific layers, but goes a step further to compute a relevance score for each neuron applying a non-trivial summation function.
@@ -29,6 +33,8 @@ Where:
 - $ z_{ij}^+ = x_i w_{ij}^+ $ : the product of the input and **positive part** of the weight.
 - $R_j$ : relevance at layer $j$
 - $ \epsilon $ : small positive constant for numerical stability
+
+![image](https://github.com/user-attachments/assets/c33575b8-c5db-44bc-abe8-cf4691daa11e)
 
 # Visualization
 From there we look into fun ways to interactively visualize the saliency images on top of the existing input image, both as a single image and in bulk batches. I had some success with using sliders that allow you to shift dynamically between the base image and the saliency image to clarify where the model is focusing.
