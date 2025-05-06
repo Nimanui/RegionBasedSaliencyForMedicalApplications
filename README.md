@@ -21,7 +21,7 @@ This is a more sophisticated application of gradient saliency that uses hooks wh
 
 ![image](https://github.com/user-attachments/assets/fc397ed4-9298-45fd-b079-197511d1d0f7)
 
-# LRP-ε-Z⁺ Rule
+# LRP-ε-Z⁺
 Like with GradCAM LRP leverages hooks to observe specific layers, but goes a step further to compute a relevance score for each neuron applying a non-trivial summation function.
 For each neuron $i$ and output neuron $j$, the relevance score is computed as:
 
