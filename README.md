@@ -37,7 +37,7 @@ Where:
 ![image](https://github.com/user-attachments/assets/c33575b8-c5db-44bc-abe8-cf4691daa11e)
 
 # Visualization
-From there we look into fun ways to interactively visualize the saliency images on top of the existing input image, both as a single image and in bulk batches. I had some success with using sliders that allow you to shift dynamically between the base image and the saliency image to clarify where the model is focusing.
+From there we look into fun ways to interactively visualize the saliency images on top of the existing input image, both as a single image and in bulk batches. I had some success with using sliders that allow you to shift dynamically between the base image and the saliency image to clarify where the model is focusing. Please note that GitHub does not play well with the slider metadata since it stores the notebook as a static image. Therefore, if you want to see the full sliders you will have to run the notebook in Google Colab. 
 
 # Region based Saliency
 For the final step we look at the original premise of the paper and attempt to apply region mapping to try to reduce the noise in the saliency mapping relative to known relevant regions. Unlike the paper, which had specific small regions that could then be applied using facial recognition algorithms, I opted for a more broad approach as the relevant parts of the chest xray (the lungs in the case of the Pneumonia dataset), take up more of the space of the images. I had some hope this would be enough even without an algorithm to adjust the regions to better align with the images, but found that any of the more generic region breakdowns I tried were largely not statistically significant, even when applying a more generous alpha than the paper did.
